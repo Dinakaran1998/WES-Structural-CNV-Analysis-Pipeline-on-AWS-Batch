@@ -1,4 +1,4 @@
-Here’s a comprehensive **README.md** for your **Whole Exome Sequencing (WES) Structural & CNV Analysis Pipeline** using **BWA, GATK, and Manta** on **AWS Batch**, including Docker builds, Nextflow workflow, and troubleshooting guidance.
+
 
 ---
 
