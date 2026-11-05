@@ -18,6 +18,9 @@ process ALIGN_BWA {
     container '<aws_account_id>.dkr.ecr.us-east-1.amazonaws.com/bwa:latest'
     tag "${sample_id}"
     publishDir "${params.outdir}/align", mode: 'copy'
+    #The output is stored in both locations:
+    #1. AWS Batch EC2 local storage: The original output remains in the Nextflow work/ directory.
+    #2. Amazon S3: Nextflow copies the declared output files to your publishDir S3 destination.
 
     input:
     tuple val(sample_id), path(reads)
