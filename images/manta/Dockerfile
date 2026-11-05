@@ -16,6 +16,7 @@ RUN micromamba install -y -n base -c conda-forge -c bioconda \
 ENV PATH="/opt/conda/bin:${PATH}"
 
 # Set working directory
+#WORKDIR sets the default working directory inside the Docker container.
 WORKDIR /data
 
 # Default command
