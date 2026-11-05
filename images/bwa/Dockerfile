@@ -21,4 +21,6 @@ RUN which aws && aws --version || echo "aws failed"
 
 WORKDIR /workspace
 
+#"CMD specifies the default command to execute when a Docker container starts. 
+#In this example, /bin/bash opens an interactive Bash shell inside the container when run with an interactive terminal."
 CMD ["/bin/bash"]
